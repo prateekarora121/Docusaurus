@@ -11,10 +11,4 @@ defaults:
 jobs:
   PR:
     uses: prateekarora121/central-github-action/.github/workflows/main.yml@main
-
-  Test:
-      runs-on : windows-latest
-      steps:
-        - name: clone repository
-          uses: actions/checkout@v2
   
