@@ -10,6 +10,6 @@ defaults:
     shell: bash -leo pipefail {0}
 jobs:
   PR:
-    uses: prateekarora121/central-github-action/.github/workflows/main.yml@main
+    uses: prateekarora121/central-github-action/.github/workflows/docusaurus-build.yml@main
     
   
