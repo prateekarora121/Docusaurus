@@ -32,6 +32,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+      - name: Installing PNPM
+        uses: pnpm/action-setup@v2.2.2
+        id: pnpm-install
+        with:
+          version: 7.8.0
+          run_install: false
       - name: Output files
         run: |
          cd "$GITHUB_WORKSPACE"
