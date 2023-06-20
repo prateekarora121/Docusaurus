@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: /home/runner/work/Docusaurus/Docusaurus/website/build/test-site
+          path: /home/runner/work/Docusaurus/Docusaurus/website/
           if-no-files-found: error
   deploy:
     runs-on: ubuntu-latest
@@ -81,4 +81,3 @@ jobs:
         run: npm run deploy  
     needs:
       - build       
-      
