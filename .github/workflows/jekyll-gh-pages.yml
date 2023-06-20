@@ -37,7 +37,7 @@ jobs:
          cd "$GITHUB_WORKSPACE"
          ls -lthr 
       - name: Install dependencies
-        uses: pnpm install
+        run: pnpm install
       - name: Build Project
         id: Build
         run: |
