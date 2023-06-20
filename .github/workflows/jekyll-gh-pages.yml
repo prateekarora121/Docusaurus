@@ -72,7 +72,6 @@ jobs:
           path: .
       - name: Output files
         run: |
-           cd "$GITHUB_WORKSPACE"
            ls -lthr:  
     needs:
       - build       
