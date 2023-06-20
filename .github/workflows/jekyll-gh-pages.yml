@@ -72,6 +72,6 @@ jobs:
           path: .
       - name: Output files
         run: |
-           ls -lthr:  
+           ls -lthr  
     needs:
       - build       
