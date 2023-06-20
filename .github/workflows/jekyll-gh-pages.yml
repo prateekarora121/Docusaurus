@@ -62,3 +62,15 @@ jobs:
           name: build
           path: /home/runner/work/Docusaurus/Docusaurus/website/build
           if-no-files-found: error
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: build
+          path: .
+      - name: Output files
+        run: |
+           cd "$GITHUB_WORKSPACE"
+           ls -lthr:  
