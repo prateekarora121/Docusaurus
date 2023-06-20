@@ -60,5 +60,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: .
+          path: /home/runner/work/Docusaurus/Docusaurus/website
           if-no-files-found: error
