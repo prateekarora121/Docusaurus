@@ -63,7 +63,8 @@ jobs:
       - name: Deploying Docs
         run: |
           cd "$GITHUB_WORKSPACE"/website
-          npm run deploy  
+          npm install --global docusaurus-init
+          pnpm run deploy  
   
       - name: Upload artifact
         uses: actions/upload-artifact@v2
