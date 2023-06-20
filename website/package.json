@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.7"
+  },
+  "dependencies": {
+    "typescript": "2.7",
+    "webpack": "^4.46.0"
   }
 }
