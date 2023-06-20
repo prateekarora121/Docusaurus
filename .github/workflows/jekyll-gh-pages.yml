@@ -40,7 +40,7 @@ jobs:
           run_install: false
       - name: Output files
         run: |
-         cd "$GITHUB_WORKSPACE"
+         cd "$GITHUB_WORKSPACE"/website
          ls -lthr 
       - name: Install dependencies
         run: pnpm install
