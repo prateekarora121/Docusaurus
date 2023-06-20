@@ -49,6 +49,7 @@ jobs:
       - name: Build Project
         id: Build
         run: |
+          cd "$GITHUB_WORKSPACE"/website
           export CI="false"
           pwd
           ls -lthr
