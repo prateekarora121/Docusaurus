@@ -78,6 +78,6 @@ jobs:
           git config --global user.email "pratikarora2@gmail.com"
           git config --global user.name "prateekarora121"
       - name: Deploying Docs
-        run: pnpm run deploy  
+        run: npm run deploy  
     needs:
       - build       
