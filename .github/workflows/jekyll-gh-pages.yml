@@ -56,6 +56,13 @@ jobs:
           npm run build
           pwd
           ls -lthr
+      - name: Pre Build Commands
+        run: |
+            git config --global user.email "pratikarora2@gmail.com"
+            git config --global user.name "prateekarora121"
+      - name: Deploying Docs
+        run: npm run deploy  
+  
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
