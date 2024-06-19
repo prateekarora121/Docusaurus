@@ -5,7 +5,8 @@ module.exports = {
 
     },
     collect:{
-      staticDistDir:'website/build'
+      staticDistDir:'website/build',
+      staticDirFileDiscoveryDepth:10
     }
   },
 };
