@@ -12,6 +12,7 @@ jobs:
           node-version: 16.x
       - name: npm install, build
         run: |
+          cd .\website\
           npm install
           npm run build
       - name: run Lighthouse CI
