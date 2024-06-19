@@ -5,7 +5,7 @@ module.exports = {
 
     },
     collect:{
-      staticDistDir:'docs'
+      staticDistDir:'website/build'
     }
   },
 };
